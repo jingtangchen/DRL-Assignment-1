@@ -33,6 +33,8 @@ def get_action(obs):
     last_destination = destination_look
     if not actions: # just in case
         actions = [0,1,2,3,4,5]
-    return random.choice(actions) # Choose a random action
+    
+    res = random.choice(actions)
+    return res # Choose a random action
     # You can submit this random agent to evaluate the performance of a purely random strategy.
 
